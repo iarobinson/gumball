@@ -3,8 +3,18 @@
 <head>
   <title>Mighty Gumball (JSON)</title>
   <meta charset="utf-8">
-  <script src="mightygumball.js"></script>
   <link rel="stylesheet" href="mightygumball.css">
+  
+  <!-- We used this as an example for writing XMLHttpRequests.
+  Now we comment it out to write a JSONP request.
+  <script src="mightygumball.js"></script> -->
+  
+  
+  <!-- Link to Mighty Gumball Web Service
+    We're using the callback parameter and to specify our function so gumball folks wrap the JSON in a function call -->
+  <script src="mightygumballJSONP.js"></script>
+  <script src="http://gumball.wickedlysmart.com/?callback=updateSales"></script>
+  
   <!-- Example of using JSONP to execute JS code with the <script> tag. -->
   <!-- <script src="http://wickedlysmart.com/hfhtml5/chapter6/dog.js"></script> -->
   <script>
@@ -18,6 +28,8 @@
   <!-- More examples of using JSONP to bring in functions and data from cross referenced sources.
   <script src="http://wickedlysmart.com/hfhtml5/chapter6/dog3.js"></script>
   <script src="http://wickedlysmart.com/hfhtml5/chapter6/cat3.js"></script> -->
+
+
 </head>
 
 <body>
