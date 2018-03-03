@@ -16,5 +16,5 @@ function updateSales(responseText) {
   // // The below code is what we use to dump raw JSON into the DOM
   // //  It doesn't look great, but it shows us the API is connected properly.
   // salesDiv.innerHTML = responseText;
-  var sales = JSONparse(responseText);
+  var sales = JSON.parse(responseText);
 }
