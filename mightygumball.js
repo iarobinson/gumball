@@ -26,6 +26,6 @@ function updateSales(responseText) {
     var saleDOMObject = document.createElement("div");
     saleDOMObject.setAttribute("class", "saleItem");
     saleDOMObject.innerHTML = singleSale.name + " sold " + singleSale.sales + " gumballs";
-    salesDiv.appendChild(div);
+    salesDiv.appendChild(saleDOMObject);
   }
 }
